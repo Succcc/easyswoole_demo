@@ -9,6 +9,13 @@
         }
     ],
     "require": {
-        "aprchen/easyswoole_core": "dev-master"
+        "aprchen/easyswoole_core": "dev-master",
+        "joshcam/mysqli-database-class": "^2.8",
+        "overtrue/wechat": "^3.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.2",
+        "phpunit/php-invoker": "^1.1",
+        "phpunit/dbunit": "^3.0"
     }
 }
