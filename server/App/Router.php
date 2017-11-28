@@ -9,6 +9,7 @@
 namespace App;
 
 
+
 use Core\AbstractInterface\AbstractRouter;
 use Core\Component\Logger;
 use Core\Http\Response;
@@ -26,5 +27,10 @@ class Router extends AbstractRouter
             $res->end();
         });
         $routeCollector->addRoute("GET","/router2",'/test');
+    }
+
+    function register(RouteCollector $routeCollector)
+    {
+        // TODO: Implement register() method.
     }
 }
