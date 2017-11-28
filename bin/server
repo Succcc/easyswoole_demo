@@ -1,6 +1,15 @@
 #!/usr/local/bin/php
 <?php
+/**
+ * 程序根补录
+ */
 define("ES_ROOT",realpath(__DIR__.'/../server'));
+/**
+ * 业务逻辑目录
+ */
 define("ES_APP",ES_ROOT.'/App');
+/**
+ * 配置目录
+ */
 define("ES_CONF",ES_ROOT.'/Conf');
 require_once dirname(__FILE__).'/../vendor/aprchen/easyswoole_core/src/server';
