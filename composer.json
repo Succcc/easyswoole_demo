@@ -1,0 +1,14 @@
+{
+    "name": "sl/easyswoole_demo",
+    "type": "project",
+    "license": "Apache",
+    "authors": [
+        {
+            "name": "ott321",
+            "email": "ott321@yeah.net"
+        }
+    ],
+    "require": {
+        "aprchen/easyswoole_core": "dev-master"
+    }
+}

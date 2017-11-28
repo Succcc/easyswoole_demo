@@ -1,0 +1,6 @@
+#!/usr/local/bin/php
+<?php
+define("ES_ROOT",realpath(__DIR__.'/../server'));
+define("ES_APP",ES_ROOT.'/App');
+define("ES_CONF",ES_ROOT.'/Conf');
+require_once dirname(__FILE__).'/../vendor/aprchen/easyswoole_core/src/server';

@@ -1,0 +1,7 @@
+vendor/
+.idea/easyPHP-Swoole.iml
+.idea/modules.xml
+.idea/workspace.xml
+.idea/vcs.xml
+src/swoole_log.txt
+composer.lock
