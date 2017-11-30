@@ -29,11 +29,6 @@ class Service
          * @see(https://github.com/ThingEngineer/PHP-MySQLi-Database-Class)
          */
         $di->set(SysConstant::DB,\MysqliDb::class,$conf->getConf("DATABASE"));
-        /**
-         * @desc easyWeChat
-         * @see(https://easywechat.org/)
-         */
-        $di->set(SysConstant::WE_CHAT,Application::class,$conf->getConf("WE_CHAT_CONF"));
 
     }
 

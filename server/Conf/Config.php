@@ -40,7 +40,7 @@ class Config
             "SERVER"=>array(
                 "LISTEN"=>"0.0.0.0",
                 "SERVER_NAME"=>"",
-                "PORT"=>9501,
+                "PORT"=>9000,
                 "RUN_MODE"=>SWOOLE_PROCESS,//不建议更改此项
                 "SERVER_TYPE"=>\Core\Swoole\Config::SERVER_TYPE_WEB,//
                 'SOCKET_TYPE'=>SWOOLE_TCP,//当SERVER_TYPE为SERVER_TYPE_SERVER模式时有效
@@ -61,7 +61,8 @@ class Config
     }
 
     private function userConf(){
-        return array("WE_CHAT_CONF" => [
+        return array(
+            "WE_CHAT_CONF" => [
             /**
              * Debug 模式，bool 值：true/false
              *
@@ -117,9 +118,15 @@ class Config
              * 更多请参考： http://docs.guzzlephp.org/en/latest/request-options.html
              */
             'guzzle' => [
-                'timeout' => 3.0, // 超时时间（秒）
+                'timeout' => 5.0, // 超时时间（秒）
                 //'verify' => false, // 关掉 SSL 认证（强烈不建议！！！）
             ],
-        ]);
+        ],
+            "REDIS" => array(
+                "HOST" => '127.0.0.1',
+                "PORT" => 6379,
+                "AUTH" => ""
+            ),
+        );
     }
 }

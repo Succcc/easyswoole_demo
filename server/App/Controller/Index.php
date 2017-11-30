@@ -50,7 +50,7 @@ class Index extends AbstractController
     {
         // TODO: Implement actionNotFount() method.
         $this->response()->withStatus(Status::CODE_NOT_FOUND);
-        $this->response()->write(file_get_contents(ROOT."/App/Static/404.html"));
+        $this->response()->write(file_get_contents(ES_ROOT."/App/Static/404.html"));
     }
 
     function afterAction()
