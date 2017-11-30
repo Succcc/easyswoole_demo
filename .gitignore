@@ -4,4 +4,7 @@ vendor/
 .idea/workspace.xml
 .idea/vcs.xml
 src/swoole_log.txt
+server/Log/
+server/Conf/weChat.php
+server/Temp/
 composer.lock
